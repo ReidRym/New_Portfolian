@@ -7,6 +7,13 @@ links.forEach(link => {
   });
 });
 
+const toggleBtn = document.querySelector(".toggle-btn");
+const ul = document.querySelector(".nav-links-container");
+
+toggleBtn.addEventListener("click", () => {
+  toggleBtn.classList.toggle("active");
+  ul.classList.toggle("active");
+});
 let projects = document.querySelectorAll(".project-cards");
 
 projects.forEach((card, index) => {
